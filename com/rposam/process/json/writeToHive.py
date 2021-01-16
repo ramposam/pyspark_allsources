@@ -5,63 +5,31 @@ from pyspark.sql.functions import expr
 from pyspark.sql.types import StructType, StructField, ArrayType, StringType
 from pyspark.sql.functions import col, explode
 from com.rposam.util.logger import Log4j
-
+from com.rposam.schema.FileSchema import FileSchema
 from com.rposam.config.SparkConf import SparkConfiguration
-
-schema = StructType([
-    StructField("results", ArrayType(
-        StructType([
-            StructField("user", StructType([
-                StructField("gender", StringType()),
-                StructField("name", StructType([
-                    StructField("title", StringType()),
-                    StructField("first", StringType()),
-                    StructField("last", StringType())
-                ])),
-                StructField("location", StructType([
-                    StructField("street", StringType()),
-                    StructField("city", StringType()),
-                    StructField("state", StringType()),
-                    StructField("zip", StringType())
-                ])),
-                StructField("email", StringType()),
-                StructField("username", StringType()),
-                StructField("password", StringType()),
-                StructField("salt", StringType()),
-                StructField("md5", StringType()),
-                StructField("sha1", StringType()),
-                StructField("sha256", StringType()),
-                StructField("registered", StringType()),
-                StructField("dob", StringType()),
-                StructField("phone", StringType()),
-                StructField("cell", StringType()),
-                StructField("HETU", StringType()),
-                StructField("picture", StructType([
-                    StructField("large", StringType()),
-                    StructField("medium", StringType()),
-                    StructField("thumbnail", StringType())
-                ]))
-            ]))
-        ])
-    )),
-    StructField("nationality", StringType()),
-    StructField("seed", StringType()),
-    StructField("version", StringType())
-])
+import os
+schema = FileSchema.randomuserapiSchema()
 
 if __name__ == "__main__":
-    conf = SparkConfiguration().getSparkConf()
-    warehouseLocation = "hdfs://localhost:8020/user/hive/warehouse/sparkdb.db"
+    conf = SparkConfiguration.getSparkConf()
+    # for locally installed spark and hadoop
+    # warehouseLocation = "hdfs://localhost:8020/user/hive/warehouse/sparkdb.db"
+    # thriftServer ="thrift://localhost:9083"
 
+    # for itversity cluster
+    warehouseLocation = "hdfs://nn01.itversity.com:8020/user/rposam2021/warehouse/rposam2021_hivedb.db"
+    thriftServer = "thrift://gw02.itversity.com:9083"
+    os.environ["HADOOP_USER_NAME"] = "rposam2021"
     spark = SparkSession.builder.\
         appName("Read json and write to local installed spark on ubuntu"). \
         config("spark.sql.warehouse.dir", warehouseLocation). \
-        config("hive.metastore.uris", "thrift://localhost:9083"). \
+        config("hive.metastore.uris", thriftServer). \
         enableHiveSupport().\
         getOrCreate()
     logger = Log4j(spark)
     logger.info("Spark session created using enableHivesupport")
     df = spark.read.schema(schema=schema).option("multiLine", "true").json(r"json\randomuserapi.json")
+    print(spark.sparkContext.sparkUser())
 
     logger.info("Reading json data using multiline true")
 
@@ -92,6 +60,6 @@ if __name__ == "__main__":
         drop("results", "result")
 
     logger.info("Writing json dataframe to hive")
-    newDF.write.insertInto("sparkdb.randomuserapi")
+    newDF.write.saveAsTable("rposam2021_hivedb.randomuserapi")
 
     logger.info("Writing to Hive completed")

@@ -14,7 +14,7 @@ def renameAllColumns(cols):
 
 
 if __name__ == "__main__":
-    conf = SparkConfiguration().getSparkConf()
+    conf = SparkConfiguration.getSparkConf()
     spark = SparkSession.builder. \
         config(conf=conf). \
         appName("Write to AWS S3 bucket"). \

@@ -4,9 +4,8 @@ from com.rposam.config.PostgresConf import PostgresConf
 from com.rposam.util.logger import Log4j
 
 from com.rposam.config.SparkConf import SparkConfiguration
-
 if __name__ == "__main__":
-    conf = SparkConfiguration().getSparkConf()
+    conf = SparkConfiguration.getSparkConf()
 
     spark = SparkSession.builder.config(conf=conf).appName("Reading zips.json and Writing to Postgresql using JDBC").getOrCreate()
 
@@ -22,7 +21,7 @@ if __name__ == "__main__":
 
     logger.info("Reading postgres jdbc connection information..")
 
-    jdbcProps = PostgresConf().getConnectoin()
+    jdbcProps = PostgresConf.getConnectoin()
     logger.info("Writing output to jdbc(postgres)...")
 
     newDF.write.format("jdbc"). \

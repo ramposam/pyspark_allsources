@@ -4,7 +4,7 @@ from pyspark.sql.types import StringType, IntegerType, DoubleType, DateType, Str
 import re
 from com.rposam.config.SparkConf import SparkConfiguration
 from com.rposam.util.logger import Log4j
-
+from com.rposam.schema.FileSchema import FileSchema
 regex = r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)"
 
 
@@ -24,12 +24,7 @@ def parseGender(gender):
         return "N"
 
 
-FileSchema = StructType([StructField("ID", IntegerType(), False),
-                         StructField("Name", StringType(), False),
-                         StructField("Email", StringType(), True),
-                         StructField("Age", IntegerType(), True),
-                         StructField("Gender", StringType(), False),
-                         StructField("Salary", DoubleType(), True)])
+FileSchema = FileSchema()._20000recordsSchema()
 
 if __name__ == "__main__":
     conf = SparkConfiguration().getSparkConf()

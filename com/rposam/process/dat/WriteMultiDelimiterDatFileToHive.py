@@ -15,7 +15,7 @@ from com.rposam.config.PostgresConf import PostgresConf
 from com.rposam.config.SparkConf import SparkConfiguration
 
 if __name__ == "__main__":
-    conf = SparkConfiguration().getSparkConf()
+    conf = SparkConfiguration.getSparkConf()
     warehouseLocation = "hdfs://localhost:8020/user/hive/warehouse/sparkdb.db"
 
     spark = SparkSession.builder. \

@@ -1,7 +1,7 @@
 import configparser as cp
 from pyspark import SparkConf
 class SparkConfiguration:
-    def getSparkConf(self):
+    def getSparkConf():
         sparkConf = SparkConf()
         conf = cp.ConfigParser()
         conf.read(r"application.properties")
