@@ -1,0 +1,6 @@
+21/01/18 20:16:13 INFO ETL Pipeline using Airflow Parquet To AVRO : Spark session created...
+21/01/18 20:16:13 INFO ETL Pipeline using Airflow Parquet To AVRO : Source is output/emp_mgr_avro and target is spark.emp_mgr
+21/01/18 20:16:13 INFO ETL Pipeline using Airflow Parquet To AVRO : Started reading data from sources
+21/01/18 20:16:19 INFO ETL Pipeline using Airflow Parquet To AVRO : Fetching schema of source file: StructType(List(StructField(empno,IntegerType,true),StructField(ename,StringType,true),StructField(job,StringType,true),StructField(mgr,StringType,true),StructField(hiredate,DateType,true),StructField(sal,DoubleType,true),StructField(comm,StringType,true),StructField(deptno,IntegerType,true),StructField(manager_name,StringType,true)))
+21/01/18 20:16:19 INFO ETL Pipeline using Airflow Parquet To AVRO : Writing out to a  target initialized..
+21/01/18 20:16:39 INFO ETL Pipeline using Airflow Parquet To AVRO : writing to target: spark.emp_mgr is completed...

@@ -59,10 +59,11 @@ class FileSchema:
             StructField("empno", IntegerType()),
             StructField("ename", StringType()),
             StructField("job", StringType()),
-            StructField("mgr", IntegerType()),
+            StructField("mgr", StringType()),
             StructField("hiredate", DateType()),
             StructField("sal", DoubleType()),
-            StructField("comm", IntegerType()),
+            StructField("comm", StringType()),
             StructField("deptno", IntegerType())
         ])
         return schema
+

@@ -1,0 +1,16 @@
+{
+            "type": "record",
+            "namespace": "schema",
+            "name": "emp_mgr_avro",
+            "fields": [
+                {"name": "empno", "type": "int"},
+                {"name": "ename", "type": "string"},
+                {"name": "job", "type": "string"},
+                {"name": "mgr", "type": "string"},
+                {"name": "hiredate", "type": [{"type": "int", "logicalType": "date" }, "null" ]},
+                {"name": "sal", "type": "double"},
+                {"name": "comm", "type": "string"},
+                {"name": "deptno", "type": "int"},
+                {"name": "manager_name", "type": "string"}
+            ]
+}

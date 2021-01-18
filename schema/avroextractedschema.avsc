@@ -1,0 +1,72 @@
+{
+  "type": "record",
+  "name": "topLevelRecord",
+  "fields": [
+    {
+      "name": "empno",
+      "type": [
+        "int",
+        "null"
+      ]
+    },
+    {
+      "name": "ename",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "job",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "mgr",
+      "type": [
+        "int",
+        "null"
+      ]
+    },
+    {
+      "name": "hiredate",
+      "type": [
+        {
+          "type": "int",
+          "logicalType": "date"
+        },
+        "null"
+      ]
+    },
+    {
+      "name": "sal",
+      "type": [
+        "double",
+        "null"
+      ]
+    },
+    {
+      "name": "comm",
+      "type": [
+        "int",
+        "null"
+      ]
+    },
+    {
+      "name": "deptno",
+      "type": [
+        "int",
+        "null"
+      ]
+    },
+    {
+      "name": "manager_name",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  ]
+}

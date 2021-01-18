@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6815277-4383-49c3-898f-72751992d6b0" name="Default Changelist" comment="" />
+    <list default="true" id="a6815277-4383-49c3-898f-72751992d6b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-logs/hdfstoawss3.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/rposam/process/etlpipeline/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/rposam/process/etlpipeline/airflow/ReadAvroWriteToJdbcPostgres.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/rposam/process/etlpipeline/airflow/ReadCSVWriteToParquet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/rposam/process/etlpipeline/airflow/ReadParquetWriteToAvro.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/rposam/process/etlpipeline/airflow/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/emp_mgr/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/emp_mgr/.part-00000-4924a04e-a855-4967-b596-fc28ddda8890-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/emp_mgr/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/emp_mgr/part-00000-4924a04e-a855-4967-b596-fc28ddda8890-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/emp_mgr_avro/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/emp_mgr_avro/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/emp_mgr_avro/part-00000-08593eb3-43e6-42eb-8388-0fefe23cb339-c000.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema/avroextractedschema.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema/emp_mgr_avro.avsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/rposam/schema/FileSchema.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/rposam/schema/FileSchema.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,21 +40,28 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1kjXlHnG5pCzY8zoisx1hnxAqgv" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\91889\PycharmProjects\GitProjects\pyspark_allsources\schema" />
+      <recent name="C:\Users\91889\PycharmProjects\GitProjects\pyspark_allsources\output\avroschema" />
+      <recent name="C:\Users\91889\PycharmProjects\Spark-Streaming\pyspark_allsources\csv\emp\emp2.csv" />
+      <recent name="C:\Users\91889\PycharmProjects\Spark-Streaming\pyspark_allsources\csv\emp2" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\91889\PycharmProjects\Spark-Streaming\pyspark_allsources\json\baddatafiles" />
       <recent name="C:\Users\91889\PycharmProjects\Spark-Streaming\pyspark_allsources\csv\badrecords" />
       <recent name="C:\Users\91889\PycharmProjects\Spark-Streaming\pyspark_allsources\csv\emp" />
       <recent name="C:\Users\91889\PycharmProjects\Spark-Streaming\pyspark_allsources\csv" />
       <recent name="C:\Users\91889\PycharmProjects\Spark-Streaming\pyspark_allsources\log" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\91889\PycharmProjects\Spark-Streaming\pyspark_allsources\csv\emp\emp2.csv" />
-      <recent name="C:\Users\91889\PycharmProjects\Spark-Streaming\pyspark_allsources\csv\emp2" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -49,7 +76,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.ReadAvroWriteToJdbcPostgres">
     <configuration name="PostgrecopyVSDataFrameWriter" type="PythonConfigurationType" factoryName="Python">
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -71,6 +98,69 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ReadAvroWriteToJdbcPostgres" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/rposam/process/etlpipeline/airflow/ReadAvroWriteToJdbcPostgres.py" />
+      <option name="PARAMETERS" value="output/emp_mgr_avro spark.emp_mgr" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ReadCSVWriteToParquet" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/rposam/process/etlpipeline/airflow/ReadCSVWriteToParquet.py" />
+      <option name="PARAMETERS" value="csv\emp output\emp_mgr" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ReadParquetWriteToAvro" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/rposam/process/etlpipeline/airflow/ReadParquetWriteToAvro.py" />
+      <option name="PARAMETERS" value="output\emp_mgr output\emp_mgr_avro" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="pyspark_allsources" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,69 +174,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="badRecordsPathOption" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/rposam/process/badrecords/badRecordsPathOption.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="identifycorruptrecords" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\91889\PycharmProjects\Spark-Streaming\pyspark_allsources\com\rposam\process\badrecords\columnNameOfCorruptRecordOption.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="logbadrecords" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\91889\PycharmProjects\Spark-Streaming\pyspark_allsources\com\rposam\process\badrecords\badRecordsPathOption.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -243,19 +270,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.PostgrecopyVSDataFrameWriter" />
-      <item itemvalue="Python.logbadrecords" />
-      <item itemvalue="Python.identifycorruptrecords" />
-      <item itemvalue="Python.badRecordsPathOption" />
       <item itemvalue="Python.pythonpractise" />
       <item itemvalue="Python.test" />
+      <item itemvalue="Python.ReadCSVWriteToParquet" />
+      <item itemvalue="Python.ReadParquetWriteToAvro" />
+      <item itemvalue="Python.ReadAvroWriteToJdbcPostgres" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ReadAvroWriteToJdbcPostgres" />
+        <item itemvalue="Python.ReadParquetWriteToAvro" />
+        <item itemvalue="Python.ReadCSVWriteToParquet" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.pythonpractise" />
-        <item itemvalue="Python.badRecordsPathOption" />
-        <item itemvalue="Python.logbadrecords" />
-        <item itemvalue="Python.identifycorruptrecords" />
       </list>
     </recent_temporary>
   </component>
@@ -270,7 +297,33 @@
       <option name="presentableId" value="Default" />
       <updated>1606215124067</updated>
     </task>
+    <task id="LOCAL-00001" summary="Removed some comments from file">
+      <created>1610876422961</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610876422961</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Removed some comments from file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed some comments from file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
