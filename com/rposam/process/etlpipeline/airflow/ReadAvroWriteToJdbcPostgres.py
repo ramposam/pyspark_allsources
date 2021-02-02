@@ -27,7 +27,7 @@ if __name__ == "__main__":
     source = sys.argv[1]
     target = sys.argv[2]
 
-    logger.info(f"Source is {source} and target is {target}")
+    logger.info("Source is {0} and target is {1}".format(source,target))
 
     logger.info("Started reading data from sources")
 
@@ -41,7 +41,7 @@ if __name__ == "__main__":
         format("avro"). \
         load(source)
 
-    logger.info(f"Fetching schema of source file: {empMgrDF.schema}")
+    logger.info("Fetching schema of source file: {0}".format(empMgrDF.schema))
     postgresConf = PostgresConf.getConnectoin()
 
     logger.info("Writing out to a  target initialized..")
@@ -54,6 +54,6 @@ if __name__ == "__main__":
         mode(saveMode="append"). \
         save()
 
-    logger.info(f"writing to target: {target} is completed...")
+    logger.info("writing to target: {0} is completed...".format(target))
 
     Driver.stop()

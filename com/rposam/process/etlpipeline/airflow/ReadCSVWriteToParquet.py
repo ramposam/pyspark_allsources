@@ -24,7 +24,7 @@ if __name__ == "__main__":
     source = sys.argv[1]
     target = sys.argv[2]
 
-    logger.info(f"Source is {source} and target is {target}")
+    logger.info("Source is {0} and target is {1}".format(source,target))
 
     logger.info("Started reading data from sources")
 
@@ -35,7 +35,7 @@ if __name__ == "__main__":
         load(source)
     empDF.show()
 
-    logger.info(f"Source schema is {empDF.schema}")
+    logger.info("Source schema is {0}".format(empDF.schema))
 
     logger.info("Registered source DF as temporarary view")
     empDF.createOrReplaceTempView("emp")
@@ -54,6 +54,6 @@ if __name__ == "__main__":
         mode(saveMode="overwrite").\
         save(target)
 
-    logger.info(f"writing to target: {target} is completed...")
+    logger.info("writing to target: {0} is completed...".format(target))
 
     Driver.stop()
