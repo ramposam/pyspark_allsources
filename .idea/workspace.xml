@@ -2,25 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6815277-4383-49c3-898f-72751992d6b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-logs/hdfstoawss3.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/rposam/process/etlpipeline/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/rposam/process/etlpipeline/airflow/ReadAvroWriteToJdbcPostgres.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/rposam/process/etlpipeline/airflow/ReadCSVWriteToParquet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/rposam/process/etlpipeline/airflow/ReadParquetWriteToAvro.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/rposam/process/etlpipeline/airflow/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/emp_mgr/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/emp_mgr/.part-00000-4924a04e-a855-4967-b596-fc28ddda8890-c000.snappy.parquet.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/emp_mgr/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/emp_mgr/part-00000-4924a04e-a855-4967-b596-fc28ddda8890-c000.snappy.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/emp_mgr_avro/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/emp_mgr_avro/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/emp_mgr_avro/part-00000-08593eb3-43e6-42eb-8388-0fefe23cb339-c000.avro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schema/avroextractedschema.avsc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schema/emp_mgr_avro.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/airflow_practise/test1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/airflow_practise/test2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/rposam/process/tojson/CsvToJson.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/rposam/process/tojson/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/emp_mgr/.part-00000-b1c64971-c3f5-4fc8-8e43-333ef923b595-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/emp_mgr/part-00000-b1c64971-c3f5-4fc8-8e43-333ef923b595-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/mgr_details.json/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/mgr_details.json/.part-00000-14548209-76ba-4e97-ac04-2c4cdbe278c5-c000.json.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/mgr_details.json/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/mgr_details.json/part-00000-14548209-76ba-4e97-ac04-2c4cdbe278c5-c000.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pyspark_allsources.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/rposam/schema/FileSchema.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/rposam/schema/FileSchema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app-logs/hdfstoawss3.log" beforeDir="false" afterPath="$PROJECT_DIR$/app-logs/hdfstoawss3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/emp/emp.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/emp/emp.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/emp_mgr/.part-00000-4924a04e-a855-4967-b596-fc28ddda8890-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/emp_mgr/part-00000-4924a04e-a855-4967-b596-fc28ddda8890-c000.snappy.parquet" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +44,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -76,7 +73,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ReadAvroWriteToJdbcPostgres">
+  <component name="RunManager" selected="Python.CsvToJson">
+    <configuration name="CsvToJson" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/rposam/process/tojson/CsvToJson.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="PostgrecopyVSDataFrameWriter" type="PythonConfigurationType" factoryName="Python">
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -161,6 +179,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="WriteToJDBCPostgres" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/rposam/process/json/WriteToJDBCPostgres.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="pyspark_allsources" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,48 +213,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pythonpractise" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pythonpractise.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -270,19 +267,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.PostgrecopyVSDataFrameWriter" />
-      <item itemvalue="Python.pythonpractise" />
-      <item itemvalue="Python.test" />
       <item itemvalue="Python.ReadCSVWriteToParquet" />
       <item itemvalue="Python.ReadParquetWriteToAvro" />
       <item itemvalue="Python.ReadAvroWriteToJdbcPostgres" />
+      <item itemvalue="Python.CsvToJson" />
+      <item itemvalue="Python.WriteToJDBCPostgres" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.CsvToJson" />
+        <item itemvalue="Python.WriteToJDBCPostgres" />
+        <item itemvalue="Python.ReadCSVWriteToParquet" />
         <item itemvalue="Python.ReadAvroWriteToJdbcPostgres" />
         <item itemvalue="Python.ReadParquetWriteToAvro" />
-        <item itemvalue="Python.ReadCSVWriteToParquet" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.pythonpractise" />
       </list>
     </recent_temporary>
   </component>
@@ -304,7 +301,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610876422961</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added etl pipeline module to verify on airflow scheduler">
+      <created>1610981442653</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610981442653</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added etl pipeline module to verify on airflow scheduler">
+      <created>1612247965133</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612247965134</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -323,7 +334,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Removed some comments from file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed some comments from file" />
+    <MESSAGE value="Added etl pipeline module to verify on airflow scheduler" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added etl pipeline module to verify on airflow scheduler" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
