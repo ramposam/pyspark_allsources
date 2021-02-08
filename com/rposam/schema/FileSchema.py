@@ -2,6 +2,7 @@ from pyspark.sql.types import StructType, StructField, StringType, IntegerType, 
 
 
 class FileSchema:
+    @staticmethod
     def randomuserapiSchema():
         schema = StructType([
             StructField("results", ArrayType(
@@ -45,6 +46,7 @@ class FileSchema:
         ])
         return schema
 
+    @staticmethod
     def _20000recordsSchema():
         schema = StructType([StructField("ID", IntegerType(), False),
                              StructField("Name", StringType(), False),
@@ -54,6 +56,7 @@ class FileSchema:
                              StructField("Salary", DoubleType(), True)])
         return schema
 
+    @staticmethod
     def empSchema():
         schema = StructType([
             StructField("empno", IntegerType()),

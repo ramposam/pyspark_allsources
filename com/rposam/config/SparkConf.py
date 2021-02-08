@@ -1,6 +1,7 @@
 import configparser as cp
 from pyspark import SparkConf
 class SparkConfiguration:
+    @staticmethod
     def getSparkConf():
         sparkConf = SparkConf()
         conf = cp.ConfigParser()

@@ -1,6 +1,7 @@
 import configparser as cp
 from pyspark import SparkConf
 class HiveConfiguration:
+    @staticmethod
     def getConnectoin():
         config = cp.ConfigParser()
         config.read("hive.properties")

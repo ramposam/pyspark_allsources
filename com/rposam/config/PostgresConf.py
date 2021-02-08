@@ -1,6 +1,7 @@
 import configparser as cp
 from pyspark import SparkConf
 class PostgresConf:
+    @staticmethod
     def getConnectoin():
         config = cp.ConfigParser()
         config.read("connection.properties")
